@@ -2,9 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title> SIMON GAME </title>
+
+    <!--stlye link in Head-->
+    <link rel="stylesheet" href="css/simon.css">
+
 </head>
 <body>
+
+<div class="container">
+
+    <div class="controlPanel">
+        <h1 id="gameTitle"> Simon Game </h1>
+
+        <h3 id="level">Click Start. <br>Watch the pattern. <br>Then click buttons to match the pattern</h3>
+
+        <button id="start">Start Game</button>
+        <button id="hiScore">Hi Score</button>
+    </div>
+
+    <div class="box-container">
+        <div id="red1" class="box" data-num="1"> </div>
+        <div id="green2" class="box" data-num="2"> </div>
+        <div id="blue3" class="box" data-num="3"> </div>
+        <div id="yellow4" class="box" data-num="4"> </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.2.4.js"
+        integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+        crossorigin="anonymous"></script>
+
+<!--script link at bottom of body-->
+<script src="js/simon.js";></script>
 
 </body>
 </html>

@@ -1,0 +1,70 @@
+
+.container {
+    width: 430px;
+    border: 2px solid green;
+    margin-left: 20px;
+    padding-left: 25px;
+    margin-top: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.controlPanel {
+    width: 400px;
+    text-align: center;
+    border: 3px solid green;
+}
+
+#gameTitle {
+    font-size: 48px;
+}
+
+#start {
+    height: 40px;
+    width: 90px;
+}
+
+#hiScore {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    height: 40px;
+    width: 90px;
+    background-color: lightgrey;
+}
+
+.box-container { /*THIS is main buttons box- not body -not h1 also opt/sht+up/ dwn moves sel codelines  up or dwn*/
+    width: 400px;
+    height: 400px;
+    border: 3px solid green;
+    background-color: black;/* #d3d2be; */
+}
+
+.box { /*class for each indiv box red blue green  yellow below*/
+    width: 115px;
+    height: 115px;
+    border: 3px solid grey;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 10px;
+    padding: 25px;
+    float: left; /* float left gets all the divs to line up sideways until contain full then moves downrow */
+    font-size: 14px;
+}
+
+#red1 {
+    background-color: red;
+}
+
+#green2 {
+    background-color: green;
+}
+
+#blue3 {
+    background-color: blue; /* ====clear will move the green box down to nex row--OR can use nth child with pseudo: indicator:*/
+    clear: left; /*  .box:nth-child(3), .box:nth-child(5) { clear:left; } */
+}
+
+#yellow4 {
+    background-color: #ffc455;
+}
+
