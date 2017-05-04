@@ -51,7 +51,6 @@ $(document).ready(function () {
 
     $('#hiScore').click(function () {               // High score button
         alert('Simon Always Has the Hi score');
-        youLose();
     });
 
     function start() {                              // START Button -sends game into RESET()
