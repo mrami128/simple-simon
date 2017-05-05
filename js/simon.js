@@ -12,12 +12,9 @@ $(document).ready(function () {
 // ======= Variable List ===================
 
     var simonArr = [];
-    var marcArr = [];
     var level = 0;
-    var newNum = 0;
-    var btnValue =0;
 
-// ======= function list ===================
+    // ======= function list ===================
 
     function youWin() {
         $('#level').html('YOU WIN !! Level: ' + level);
@@ -62,7 +59,6 @@ $(document).ready(function () {
 
     function resetGame() {                          // reset func Clears all  variables then goes into NEXT ROUND ()
         simonArr = [];
-        marcArr = [];
         level = 0;
         nextRound();
     }
@@ -70,21 +66,6 @@ $(document).ready(function () {
 
     function nextRound() {
 
-        // ==========xx ======xx SET DELAY between levels here
-
-//                var delay = 1000; // delay time in milliseconds
-//
-//                var timeoutId = setTimeout(function () {
-//                alert('Here is the delay between levels!');
-//                }, delay);
-
-        // to cancel the timeout, you can call
-        // clearTimeout(timeoutId);
-        // prior to the delay expiring
-
-
-        //another option --> $("#div1").delay(1500).fadeIn();
-        // ==========xx========xx ===========================
 
         level++;                                    // increase LEVEL +1.
 
